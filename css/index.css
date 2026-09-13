@@ -7,11 +7,11 @@
   background-image: url(../img/banana.svg);
 }
 
-/* Hide inactive tab panes */
+/* Hide inactive tab panes and show only active ones */
 .tab-pane {
   display: none !important;
 }
 
-.tab-pane.active {
+.tab-pane.show.active {
   display: block !important;
 }
