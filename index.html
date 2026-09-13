@@ -39,11 +39,15 @@
       data-hx-swap="outerHTML"
       data-hx-get="index.footer.partial.html"
     ></footer>
+    
+    <!-- Завантажити модалі ПЕРЕД Bootstrap скриптом -->
     <div
+      id="modals-container"
       data-hx-trigger="load"
-      data-hx-swap="outerHTML"
+      data-hx-swap="innerHTML"
       data-hx-get="index.product-info-modal.partial.html"
     ></div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
