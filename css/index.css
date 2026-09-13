@@ -6,3 +6,12 @@
 .carousel-control-prev-icon {
   background-image: url(../img/banana.svg);
 }
+
+/* Hide inactive tab panes */
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
