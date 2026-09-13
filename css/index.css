@@ -9,9 +9,9 @@
 
 /* Hide inactive tab panes */
 .tab-pane {
-  display: none;
+  display: none !important;
 }
 
-.tab-pane.active {
-  display: block;
+.tab-pane.show.active {
+  display: block !important;
 }
