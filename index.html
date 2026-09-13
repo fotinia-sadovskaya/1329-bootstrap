@@ -47,7 +47,18 @@
       data-hx-swap="innerHTML"
       data-hx-get="index.product-info-modal.partial.html"
     ></div>
-    
+   <script>
+  // Reinitialize Bootstrap tabs after HTMX loads content
+  document.addEventListener('htmx:afterSwap', function(event) {
+    if (event.detail.xhr.responseURL.includes('products')) {
+      // Re-initialize all tab elements
+      var tabElements = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
+      tabElements.forEach(function(tabEl) {
+        new bootstrap.Tab(tabEl);
+      });
+    }
+  });
+</script> 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
