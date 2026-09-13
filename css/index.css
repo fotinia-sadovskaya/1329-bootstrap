@@ -12,6 +12,6 @@
   display: none !important;
 }
 
-.tab-pane.show.active {
+.tab-pane.active {
   display: block !important;
 }
